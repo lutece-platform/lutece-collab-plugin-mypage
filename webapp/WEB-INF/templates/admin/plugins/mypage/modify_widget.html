@@ -1,0 +1,32 @@
+
+<div class="content-box">
+
+    <h2>#i18n{mypage.modify_widget.title}</h2>
+    <form method="post"  name="modify_widget" action="jsp/admin/plugins/mypage/DoModifyWidget.jsp">
+        <input type="hidden" id="widget_id" name="widget_id" value="${widget.id}"  />
+        <p>
+            <label for="widget_id_portlet" >#i18n{mypage.modify_widget.labelIdPortlet} * :</label>
+            <@combo name="widget_id_portlet" default_value="${widget.idPortlet}" items=portlets_list />
+        </p>
+        <p>
+            <label for="widget_color" >#i18n{mypage.modify_widget.labelColor} * :</label>
+        	<@combo name="widget_color" default_value="${widget.color}" items=colors_list />
+        </p>
+        <p>
+            <label for="widget_column" >#i18n{mypage.modify_widget.labelColumn} * :</label>
+            <select id="widget_column" name="widget_column"  tabindex="3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="#i18n{mypage.modify_widget.buttonValidate}" class="button" tabindex="3" />
+            <input class="button" type="button" onclick="javascript:history.go(-1)" value="Cancel" />
+        </p>
+
+    </form>
+
+</div>
+
+

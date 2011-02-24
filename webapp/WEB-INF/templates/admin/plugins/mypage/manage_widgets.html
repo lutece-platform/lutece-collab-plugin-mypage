@@ -1,0 +1,37 @@
+
+<div class="content-box" >
+    <h2>#i18n{mypage.manage_widgets.tableLabel}</h2>
+    <table>
+        <tr>
+            <th>#i18n{mypage.manage_widgets.columnPortlet}</th>
+            <th>#i18n{mypage.manage_widgets.columnColor}</th>
+            <th>#i18n{mypage.manage_widgets.columnColumn}</th>
+            <th>#i18n{mypage.manage_widgets.columnActions}</th>
+        </tr>
+        <#list widget_list as widget >
+        <tr>
+            <td>${widget.portletName}</td>
+            <td>${widget.color}</td>
+            <td>${widget.column}</td>
+            <td>
+                <a href="jsp/admin/plugins/mypage/ModifyWidget.jsp?widget_id=${widget.id}" >
+                    <img src="images/admin/skin/actions/modify.png" alt="#i18n{portal.util.labelModify}" title="#i18n{portal.util.labelModify}" />
+                </a>
+                <a href="jsp/admin/plugins/mypage/RemoveWidget.jsp?widget_id=${widget.id}" >
+                    <img src="images/admin/skin/actions/delete.png" alt="#i18n{portal.util.labelDelete}" title="#i18n{portal.util.labelDelete}" />
+                </a>
+            </td>
+        </tr>
+        </#list>
+    </table>
+
+    <form method="post"  action="jsp/admin/plugins/mypage/CreateWidget.jsp">
+        <input type="submit" value="#i18n{mypage.manage_widgets.buttonAddWidget}" class="button" />
+    </form>
+
+</div>
+
+
+
+
+
