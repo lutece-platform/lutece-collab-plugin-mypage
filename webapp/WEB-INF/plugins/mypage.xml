@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
 <plug-in>
+
     <name>mypage</name>
     <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
     <version>0.9.0</version>
@@ -12,16 +12,15 @@
     <provider>Mairie de Paris</provider>
     <provider-url>http://lutece.paris.fr</provider-url>
     <icon-url>images/admin/skin/plugins/mypage/mypage.png</icon-url>
-    <copyright>Copyright 2001-2009 Mairie de Paris</copyright>
+    <copyright>Copyright 2001-2011 Mairie de Paris</copyright>
     <db-pool-required>1</db-pool-required>
-    
-       
+
     <!-- Specific plugin CSS stylesheet -->
     <css-stylesheets>
+        <css-stylesheets-scope>xpage</css-stylesheets-scope>
         <css-stylesheet>mypage/mypage.css</css-stylesheet>
     </css-stylesheets>
 
-    
     <!-- Applications -->
     <applications>
         <application>
@@ -40,6 +39,5 @@
             <feature-icon-url>images/admin/skin/plugins/mypage/mypage.png</feature-icon-url>
         </admin-feature>
     </admin-features>
-
 
 </plug-in>
