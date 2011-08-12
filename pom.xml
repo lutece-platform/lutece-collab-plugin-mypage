@@ -32,8 +32,9 @@
 	</dependencies>
 	
 	<properties>
-		<jiraProjectName>LUTECE</jiraProjectName>
-		<jiraComponentId>10046</jiraComponentId>
+		<componentName>mypage</componentName>
+		<jiraProjectName>MYPAGE</jiraProjectName>
+		<jiraComponentId>10580</jiraComponentId>
 	</properties>
 
 
